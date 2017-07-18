@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="056573d7-2e38-496c-9fd6-3bc991a99275" name="Default" comment="Implementing 'Advanced Search' method&#10;&#10;-Extended the same method 'ViewCars' used for 'simple search'  to support advanced search keywords. &#10;-Made basic changes to the 'advancdSearch.blade.php' page.&#10;">
+    <list default="true" id="056573d7-2e38-496c-9fd6-3bc991a99275" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Automobile.iws" />
@@ -558,7 +558,7 @@
       <workItem from="1490238699123" duration="592000" />
       <workItem from="1493108499258" duration="2052000" />
       <workItem from="1497409048607" duration="2708000" />
-      <workItem from="1500377766794" duration="9730000" />
+      <workItem from="1500377766794" duration="9737000" />
     </task>
     <task id="LOCAL-00001" summary="Updated index page">
       <created>1493111785758</created>
@@ -574,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500409655907</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementing 'Advanced Search' method&#10;&#10;-Extended the same method 'ViewCars' used for 'simple search'  to support advanced search keywords. &#10;-Made basic changes to the 'advancdSearch.blade.php' page.&#10;">
+      <created>1500410063797</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1500410063797</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107921000" />
+    <option name="totallyTimeSpent" value="107928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
