@@ -43,6 +43,27 @@ class VehicleController extends Controller
         $yearto = $request['yearto'];
         $search = $request['search']; //by Keyword
 
+        #for advanced search
+        $pricefrom = $request['pricefrom'];
+        $priceto = $request['priceto'];
+        $steering  = $request['steering'];
+        $engine = $request['engine'];
+        $type = $request['type'];
+        $bodytype= $request['bodytype'];
+        $fuel=$request['fuel'];
+        $transmission=$request['transmission'];
+        $mileagefrom=$request['mileagefrom'];
+        $mileageto =$request['mileageto'];
+        $wd = $request['wd'];
+        $country = $request['country'];
+
+
+
+
+
+
+        #-----------------
+
         $brands = Vehicle::all()->unique("manufacturer"); //on page load populate advance search method's car brands dropwdown
 
         $q = Vehicle::query(); //for querying the table
@@ -66,8 +87,17 @@ class VehicleController extends Controller
                 ->orWhere( 'title','LIKE','%'.$search.'%')->orWhere('model','LIKE','%'.$search.'%');
         }
 
+        #for advaced search option
+        if(!empty($pricefrom) && !empty($priceto)){
+            $q->whereBetween('price',array($pricefrom,$priceto))->get();
+        }
+
+        #------------------------
+
         $results = $q->get();
         return view('vehicles.stock',['vehicles'=>$results,'brands'=>$brands]);
+
+
 
     }
 }
